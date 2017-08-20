@@ -1,20 +1,20 @@
 
 package rmqess.ch02;
 
+import com.rabbitmq.client.ConnectionFactory;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-import com.rabbitmq.client.ConnectionFactory;
 
 public class Main
 {
     public static void main(final String[] args) throws Exception
     {
         final ConnectionFactory factory = new ConnectionFactory();
-        factory.setUsername("ccm-dev");
-        factory.setPassword("coney123");
-        factory.setVirtualHost("ccm-dev-vhost");
+        factory.setUsername("jun-dev");
+        factory.setPassword("jun-dev");
+        factory.setVirtualHost("jun-dev-vhost");
         factory.setHost("localhost");
         factory.setPort(5672);
 
